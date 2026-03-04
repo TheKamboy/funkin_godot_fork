@@ -1,6 +1,8 @@
 [gd_resource type="Resource" script_class="SongAssets" format=3 uid="uid://j44835v5skg2"]
 
+[ext_resource type="PackedScene" uid="uid://diljoqohxwabk" path="res://scenes/game/huds/kade_hud.tscn" id="1_imdgg"]
 [ext_resource type="Script" uid="uid://dk2lxfhv5lvf4" path="res://scripts/resources/songs/assets.gd" id="1_wjdgi"]
 
 [resource]
 script = ExtResource("1_wjdgi")
+hud = ExtResource("1_imdgg")
