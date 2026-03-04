@@ -24,6 +24,7 @@ var singing: bool = false
 var sing_timer: float = 0.0
 var in_special_anim: bool = false
 var sprite: CanvasItem = null
+var vslice_holds:bool = false
 
 var swapped_directions: Dictionary[StringName, StringName] = {
 	&"left": &"right",
@@ -43,6 +44,8 @@ func _enter_tree() -> void:
 	dance(true)
 	if is_instance_valid(Conductor.instance):
 		Conductor.instance.beat_hit.connect(_on_beat_hit)
+	
+	vslice_holds = str_to_var(Config.get_value("gameplay", "vslice_holds"))
 
 
 func _process(delta: float) -> void:
@@ -95,9 +98,9 @@ func sing(note: Note, force: bool = false) -> void:
 		direction = swapped_directions.get(direction)
 
 	var suffixed_name: StringName = &"sing_%s%s" % [direction.to_lower(), note.sing_suffix]
-	if (not note.sing_suffix.is_empty()) and has_anim(suffixed_name):
+	if (not note.sing_suffix.is_empty()) and has_anim(suffixed_name) and (not vslice_holds or not note.hit):
 		play_anim(&"sing_%s%s" % [direction.to_lower(), note.sing_suffix], force)
-	else:
+	elif (not vslice_holds or not note.hit):
 		play_anim(&"sing_%s" % direction.to_lower(), force)
 
 
