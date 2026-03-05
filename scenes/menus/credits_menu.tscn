@@ -142,7 +142,7 @@ text = "kittysleeper"
 metadata/_custom_type_script = "uid://bable6fjbwgrq"
 
 [node name="luscious77" type="Node2D" parent="list" unique_id=2082071273]
-position = Vector2(-480, 1105.4998)
+position = Vector2(-480, 1105.4999)
 script = ExtResource("4_wywfy")
 link = "https://github.com/Luscious77"
 role = "Added Volume Muting"
@@ -155,7 +155,7 @@ text = "luscious77"
 metadata/_custom_type_script = "uid://bable6fjbwgrq"
 
 [node name="spacer" type="Node2D" parent="list" unique_id=593375683]
-position = Vector2(0, 1295.9998)
+position = Vector2(0, 1295.9999)
 script = ExtResource("3_xtkoc")
 target_y = 6
 use_x = false
@@ -164,7 +164,7 @@ centered = true
 metadata/_custom_type_script = "uid://bable6fjbwgrq"
 
 [node name="special_thanks" type="Node2D" parent="list" unique_id=1627242772]
-position = Vector2(-480, 1384.9998)
+position = Vector2(-480, 1384.9999)
 scale = Vector2(1.2, 1.2)
 script = ExtResource("3_xtkoc")
 target_y = 7
@@ -175,7 +175,7 @@ text = "special thanks"
 metadata/_custom_type_script = "uid://bable6fjbwgrq"
 
 [node name="funkin_crew" type="Node2D" parent="list" unique_id=741503976]
-position = Vector2(-480, 1573.4998)
+position = Vector2(-480, 1573.4999)
 script = ExtResource("4_wywfy")
 link = "https://github.com/FunkinCrew"
 role = "Made Original Game"
@@ -188,7 +188,7 @@ text = "the funkin crew"
 metadata/_custom_type_script = "uid://bable6fjbwgrq"
 
 [node name="godot_devs" type="Node2D" parent="list" unique_id=1111019336]
-position = Vector2(-480, 1728.9996)
+position = Vector2(-480, 1728.9999)
 script = ExtResource("4_wywfy")
 link = "https://github.com/godotengine/godot/graphs/contributors"
 role = "Made Game Engine"
@@ -201,7 +201,7 @@ text = "godot developers"
 metadata/_custom_type_script = "uid://bable6fjbwgrq"
 
 [node name="eir_team" type="Node2D" parent="list" unique_id=259700794]
-position = Vector2(-480, 1886.4996)
+position = Vector2(-480, 1886.4999)
 script = ExtResource("4_wywfy")
 link = "https://github.com/EIRTeam"
 role = "Made FFmpeg GDExtension"
@@ -215,7 +215,7 @@ metadata/_custom_type_script = "uid://bable6fjbwgrq"
 
 [node name="swordcube" type="Node2D" parent="list" unique_id=1716439119]
 material = SubResource("ShaderMaterial_33ree")
-position = Vector2(-480, 2040.9833)
+position = Vector2(-480, 2040.9999)
 script = ExtResource("13_aave4")
 link = "https://github.com/swordcube"
 role = "emotional support"
