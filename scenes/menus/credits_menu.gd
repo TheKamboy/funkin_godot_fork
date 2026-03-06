@@ -13,9 +13,7 @@ static var selected: int = 1
 func _ready() -> void:
 	GlobalAudio.music.stop()
 	music.play()
-
-	selected = 0
-	change_selection(1)
+	change_selection()
 
 
 func _input(event: InputEvent) -> void:
