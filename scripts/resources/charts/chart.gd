@@ -46,21 +46,21 @@ static func remove_stacked_notes(chart: Chart) -> int:
 	var last_note: NoteData = null
 	var stacked_notes: int = 0
 
-	while (not chart.notes.is_empty()) and index < chart.notes.size():
-		var note: NoteData = chart.notes[index]
-		if not is_instance_valid(last_note):
-			index += 1
-			last_note = note
-			continue
-
-		if last_note.direction == note.direction and \
-				absf(last_note.time - note.time) <= 25.0 / 1000.0:
-			chart.notes.remove_at(index)
-			stacked_notes += 1
-			continue
-
-		last_note = note
-		index += 1
+	#while (not chart.notes.is_empty()) and index < chart.notes.size():
+		#var note: NoteData = chart.notes[index]
+		#if not is_instance_valid(last_note):
+			#index += 1
+			#last_note = note
+			#continue
+#
+		#if last_note.direction == note.direction and \
+				#absf(last_note.time - note.time) <= 25.0 / 1000.0:
+			#chart.notes.remove_at(index)
+			#stacked_notes += 1
+			#continue
+#
+		#last_note = note
+		#index += 1
 
 	return stacked_notes
 
